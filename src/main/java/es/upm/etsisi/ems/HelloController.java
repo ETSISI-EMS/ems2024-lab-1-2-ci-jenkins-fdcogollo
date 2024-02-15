@@ -19,7 +19,7 @@ public class HelloController {
     }
 
     @RequestMapping("/hola")
-    public String hola(@RequestParam(value = "nombre", required = false, defaultValue = "Mundo") String nombre, Model model) {
+    public String hola(@RequestParam(value = "nombre", required = false, defaultValue = "Mundo") String nombre1, Model model) {
         model.addAttribute("nombre", nombre);
         return "hola";
     }
